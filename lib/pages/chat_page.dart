@@ -184,9 +184,7 @@ class _ChatPageState extends State<ChatPage> {
                 ),
               ),
             ),
-            const SizedBox(
-              height: 30,
-            ),
+            const SizedBox(height: 20),
             Padding(
               padding: const EdgeInsets.only(
                 left: 15,
@@ -195,7 +193,7 @@ class _ChatPageState extends State<ChatPage> {
                 children: List.generate(userMessages.length, (index) {
                   return Padding(
                     padding: const EdgeInsets.only(
-                      bottom: 20,
+                      bottom: 10,
                     ),
                     child: Row(
                       children: [
@@ -298,6 +296,7 @@ class _ChatPageState extends State<ChatPage> {
             ),
           ],
         ),
+        SizedBox(height: 50),
       ],
     );
   }

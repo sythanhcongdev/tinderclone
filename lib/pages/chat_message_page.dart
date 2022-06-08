@@ -23,6 +23,7 @@ class _MesagesScreenState extends State<MesagesScreen> {
 
   AppBar getAppBar() {
     return AppBar(
+      backgroundColor: white,
       automaticallyImplyLeading: false,
       title: Row(
         children: [

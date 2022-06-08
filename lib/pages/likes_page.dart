@@ -18,7 +18,6 @@ class _LikesPageState extends State<LikesPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: white,
-      bottomSheet: getFooter(),
       body: getBody(),
     );
   }
@@ -32,16 +31,24 @@ class _LikesPageState extends State<LikesPage> {
           padding: const EdgeInsets.only(top: 20),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: const [
-              Text(
+            children: [
+              const Text(
                 "10 Likes",
                 style: TextStyle(
-                    fontSize: 18, fontWeight: FontWeight.bold),
+                    fontSize: 18, fontWeight: FontWeight.bold, color: primary),
+              ),
+              Container(
+                height: 25,
+                width: 1,
+                decoration: BoxDecoration(color: black.withOpacity(0.15)),
               ),
               Text(
                 "Top Picks",
                 style: TextStyle(
-                    fontSize: 18,  fontWeight: FontWeight.bold),
+                  color: black.withOpacity(0.5),
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
               )
             ],
           ),
@@ -133,7 +140,8 @@ class _LikesPageState extends State<LikesPage> {
               );
             }),
           ),
-        )
+        ),
+       
       ],
     );
   }
